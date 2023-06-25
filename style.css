@@ -179,3 +179,9 @@ section{
     grid-column: 5/11;
     animation: var(--animate);
   }
+  ::-webkit-progress-bar {
+    height: 4%;
+    width: 70%;
+    border-radius: 10em;
+    border-color:black ;
+  }
