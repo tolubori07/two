@@ -125,19 +125,26 @@ section{
     animation: var(--animate);
   }
   .jsbar{
+    -webkit-appearance: none;
     height: 4%;
     width: 70%;
     border-radius: 10em;
     border-color:black ;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
   .cssbar{
-    height: 4%;
+    -webkit-appearance: none;
+    height: 10%;
     width: 70%;
     border-radius: 10em;
     border-color:black ;
-    --webkit-appearance: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
   }
   .htmlbar{
+    -webkit-appearance: none;
     height: 4%;
     width: 70%;
     border-radius: 10em;
@@ -181,7 +188,7 @@ section{
     animation: var(--animate);
   }
   ::-webkit-progress-bar {
-    height: 4%;
+    height: 10%;
     width: 70%;
     border-radius: 10em;
     border-color:black ;
