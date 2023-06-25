@@ -22,6 +22,7 @@ main{
 body{
     font-family: vcr osd mono;
     word-spacing: 0.5em;
+    word-wrap: break-word;
 }
 
 h1,h2,h3{
