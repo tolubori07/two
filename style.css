@@ -137,6 +137,7 @@ section{
     width: 70%;
     border-radius: 10em;
     border-color:black ;
+    --webkit-appearance: none;
   }
   .htmlbar{
     height: 4%;
