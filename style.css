@@ -2,7 +2,18 @@
   --animate : example 10s  cubic-bezier(0.755, 0.05, 0.855, 0.06) infinite;
   --fontdigital: ds-digital;
 }
-
+@font-face {
+  font-family: ds-digital;
+  src: url(ds-digital.ttf);
+}
+@font-face {
+  font-family: vcr osd mono;
+  src: url(public/VCR_OSD_MONO.ttf);
+}
+@font-face {
+  font-family: vcr osd mono;
+  src: url(public/VCR_OSD_MONO.ttf);
+}
 canvas{
     position: fixed;
     width: 100%;
