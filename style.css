@@ -47,6 +47,12 @@ section{
     padding: 1rem;
     animation: var(--animate);
 }
+@media  screen and (min-width: 300) and (max-width:900) {
+  .stuff,.thanks,.blp,.manifest,.libraries,.light,.left,.proficiency,.task,.ease{
+    grid-column: 1/12;
+  }
+}
+
 .stuff{
     margin-bottom: 8rem;
    font-size: 2rem;
