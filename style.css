@@ -142,6 +142,8 @@ section{
     width: 70%;
     border-radius: 10em;
     border-color:black ;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
   .htmlnum{
     font-family: var(--fontdigital);
