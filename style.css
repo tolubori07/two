@@ -194,8 +194,8 @@ section{
     font-size: 1em;
   }
   .boot{
-    height: 1.7%;
-    width: 5%;
+    height: 1.7em;
+    width: 2em;
   }
   .three{
     height: 2em;
@@ -206,7 +206,7 @@ section{
     animation: var(--animate);
   }
   .animeimg{
-    height: 4%;
+    height: 1.7em;
     width: 10%;
   }
   .ease{
