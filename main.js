@@ -107,54 +107,31 @@ function animate() {
 animate()
 
 //anime js for the progress bar
-var cssbar = document.querySelector('.cssnum')
-var jsbar = document.querySelector('.jsnum')
+var cssbar = document.querySelector('.csschange')
+var jsbar = document.querySelector('.jschange')
 
-var htmlbar = document.querySelector('.htmlnum');
+var htmlbar = document.querySelector('.htmlchange');
 
-var myhtmlObject = {
-  proficiency: '0%'
-}
-var mycssObject = {
-	proficiency: '0%'
-  }
-  var myjsObject = {
-	proficiency: '0%'
-  }
-
-anime({
-  targets: myhtmlObject,
-  proficiency: '90%',
-  duration: 5000,
-  easing: 'easeInOutSine',
-  round: 1,
-  update: function() {
-    htmlbar.innerHTML = JSON.stringify(myhtmlObject);
-  }
-});
-
-anime({
-	targets: mycssObject,
-	proficiency: '70%',
-	duration: 5000,
-	easing: 'easeInOutSine',
-	round: 1,
-	update: function() {
-	  cssbar.innerHTML = JSON.stringify(mycssObject);
-	}
-  });
-
-  anime({
-	targets: myjsObject,
-	proficiency: '60%',
-	duration: 5000,
-	easing: 'easeInOutSine',
-	round: 1,
-	update: function() {
-	  jsbar.innerHTML = JSON.stringify(myjsObject);
-	}
-  });
   window.onresize = function() {
     document.body.height = window.innerHeight;
 }
 window.onresize(); // called to initially set the height.
+
+anime({
+  targets: htmlbar,
+  innerHTML: [0, 90+"%"],
+  easing: 'linear',
+  round: 10 // Will round the animated value to 1 decimal
+});
+anime({
+	targets: cssbar,
+	innerHTML: [0, 70+"%"],
+	easing: 'linear',
+	round: 1 // Will round the animated value to 1 decimal
+  });
+  anime({
+	targets: jsbar,
+	innerHTML: [0, 60+"%"],
+	easing: 'linear',
+	round: 10 // Will round the animated value to 1 decimal
+  });

@@ -139,49 +139,63 @@ section{
     height: 4%;
     width: 70%;
     border-radius: 10em;
-    border-color:black ;
+    border-color:white;
     margin-top: 1%;
     margin-bottom: 1%;
+  background-color: #403d3d;
+  accent-color: red;
   }
+  
   .cssbar{
     height: 10%;
     width: 70%;
     border-radius: 10em;
-    border-color:black ;
+    border-color:white;
     margin-top: 1%;
     margin-bottom: 1%;
+    background-color: #403d3d;
     
   }
   .htmlbar{
     height: 4%;
     width: 70%;
     border-radius: 10em;
-    border-color:black ;
+    border-color:white ;
     margin-top: 1%;
     margin-bottom: 1%;
+    background-color: #403d3d;
   }
   .htmlnum{
     font-family: var(--fontdigital);
     color: #FF3403;
+    background-color: #403d3d;
+    border: 4mm ridge silver;
+    accent-color: red;
   }
   .cssnum{
     font-family: var(--fontdigital);
     color: #FF3403;
+    background-color: #403d3d;
+    border: 4mm ridge silver;
+    accent-color: red;
   }
   .jsnum{
     font-family: var(--fontdigital);
-    color: red;
+    color: #FF3403;
+    background-color: #403d3d;
+    border: 4mm ridge silver;
+    accent-color: red;
   }
   .jquery{
     height: 3em;
     width: 3em;
   }
-  .jquerylist,.bootlist,.threelist{
+  .jquerylist,.bootlist,.threelistl,.animelist{
     font-size: 1em;
   }
   .boot{
-    height: 1.7em;
-    width: 2em;
+    height: 1.7%;
+    width: 5%;
   }
   .three{
     height: 2em;
@@ -190,6 +204,10 @@ section{
   .task{
     grid-column: 1/8;
     animation: var(--animate);
+  }
+  .animeimg{
+    height: 4%;
+    width: 10%;
   }
   .ease{
     grid-column: 5/11;
