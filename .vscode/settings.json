@@ -1,6 +1,0 @@
-{
-    "git.allowForcePush": false,
-    "git.branchRandomName.enable": true,
-    "git.enableCommitSigning": true,
-    
-}
