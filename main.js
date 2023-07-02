@@ -20,8 +20,8 @@ renderer.render(scene, camera)
 const geometry = new THREE.TorusGeometry(10,3,16,100)
 const material = new THREE.MeshLambertMaterial({color:0xff345c});
 
-const knot = new THREE.Mesh(geometry,material)
-scene.add(knot)
+const torus = new THREE.Mesh(geometry,material)
+scene.add(torus)
 
 
 
@@ -56,28 +56,28 @@ Array(200).fill().forEach(addstar)
 const texture = new THREE.TextureLoader().load('space.jpg')
 scene.background = texture
 
-//moon
-const moontexture = new THREE.TextureLoader().load('earth.jpg');
+//earth
+const earthtexture = new THREE.TextureLoader().load('earth.jpg');
 const normal = new THREE.TextureLoader().load('normal.jpg')
 
-const moon = new THREE.Mesh(
+const earth = new THREE.Mesh(
 	new THREE.SphereGeometry(5, 35, 32), 
 	new THREE.MeshStandardMaterial({
-		map: moontexture,
+		map: earthtexture,
 		normalMap:normal
 	}))
-scene.add(moon)
+scene.add(earth)
 
-moon.position.z=30;
-moon.position.setX(-10)
+earth.position.z=30;
+earth.position.setX(-10)
 
 
 //scroll animation
  function movecamera (){
 const t = document.body.getBoundingClientRect().top
-moon.rotation.x += 0.05
-moon.rotation.y +=0.001
-moon.rotation.z +=0.001
+earth.rotation.x += 0.05
+earth.rotation.y +=0.001
+earth.rotation.z +=0.001
 
 camera.position.y = t * -0.002
 camera.position.x = t * -0.03
@@ -91,12 +91,12 @@ document.body.onscroll = movecamera
 function animate() {
 	requestAnimationFrame(animate)
 
-	knot.rotation.x += 0.01
-	knot.rotation.y += 0.003
-	knot.rotation.z += 0.01
+	torus.rotation.x += 0.01
+	torus.rotation.y += 0.003
+	torus.rotation.z += 0.01
 
-	moon.rotation.y += 0.01
-	moon.rotation.y += 0.003
+	earth.rotation.y += 0.01
+	earth.rotation.y += 0.003
 	
 
 

@@ -4,15 +4,15 @@
 }
 @font-face {
   font-family: ds-digital;
-  src: url(public/DS-DIGIT.TTF);
+  src: url(DS-DIGIT.TTF);
 }
 @font-face {
   font-family: vcr osd mono;
-  src: url(public/VCR_OSD_MONO.ttf);
+  src: url(VCR_OSD_MONO.ttf);
 }
 @font-face {
   font-family: aquire;
-  src: url(public/Aquire-BW0ox.otf);
+  src: url(Aquire-BW0ox.otf);
 }
 canvas{
     position: fixed;
