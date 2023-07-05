@@ -58,8 +58,9 @@ section{
     animation: var(--animate);
 }
 @media  screen and (min-width: 300) and (max-width:900) {
-  main{
-    display: none;
+  canvas{
+   height: 100lvh;
+   width: 100svw;
   }
 }
 
