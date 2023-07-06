@@ -220,3 +220,15 @@ section{
     border-radius: 10em;
     border-color:black ;
   }
+  a{
+    color: #489ed0;
+    text-decoration: underline;
+  }
+  a:hover{
+     
+      text-decoration: underline;
+      border: #489ed0 solid 5px;
+      border-radius: 50px;
+      padding: 5px;
+      font-size: 1em;
+    }
