@@ -59,7 +59,7 @@ section{
 }
 @media  screen and (min-width: 300) and (max-width:900) {
   canvas{
-   height: 100lvh;
+   height: 100lvh,100svh;
    width: 100svw;
   }
 }
