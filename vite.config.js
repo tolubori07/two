@@ -7,8 +7,6 @@ export default defineConfig({
       input: {
         index: 'index.html',
         about: 'other/index.html',
-        about: 'other/style.css',
-        about: 'other/main.js',
       },
       output: {
         entryFileNames: '[name].js',
