@@ -7,7 +7,7 @@ export default {
             app.use((ctx, next) => {
               if (ctx.url === '/projects.html') {
                 ctx.url = '/projects.html';
-              } else if (ctx.url === '/about.html') {
+              } else if (ctx.url === 'two/about.html') {
                 ctx.url = '/about.html';
               }
               return next();
