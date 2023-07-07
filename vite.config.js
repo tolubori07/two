@@ -1,19 +1,18 @@
-export default {
-    moduleexports : {
-        base: "/two/", // Sets the base path of the project
-      
-        configureServer: {
-          async server({ app }) {
-            app.use((ctx, next) => {
-              if (ctx.url === '/projects.html') {
-                ctx.url = '/projects.html';
-              } else if (ctx.url === 'two/about.html') {
-                ctx.url = '/about.html';
-              }
-              return next();
-            });
-          },
-        },
-      }
-  }
-  
+// vite.config.js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        index: 'index.html',
+        about: 'other/index.html',
+      },
+      output: {
+        entryFileNames: '[name].js',
+        chunkFileNames: 'chunks/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
+      },
+    },
+  },
+});
