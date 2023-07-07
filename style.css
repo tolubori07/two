@@ -57,11 +57,14 @@ section{
     padding: 1rem;
     animation: var(--animate);
 }
-@media  screen and (min-width: 300) and (max-width:900) {
-  canvas{
-   height: 100lvh,100svh;
-   width: 100svw;
-  }
+@media screen and (max-width: 900px) {
+  
+    canvas{
+      min-height: 100svh;
+     }
+     .left,.stuff,.manifest,.light,.proficiency,.task,.libraries{
+      grid-column: 1/12;
+     }
 }
 
 .stuff{
@@ -234,4 +237,3 @@ section{
     }
 
     /*page 2*/
-    

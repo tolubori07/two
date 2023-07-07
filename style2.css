@@ -89,3 +89,11 @@ section{
     75%  {box-shadow: 9px 9px 5px #CB0FFF;}
     100% {box-shadow: 9px 9px 5px #39FF14;}
   }
+  @media screen and (max-width:900px) {
+   .title,.past,.present,.future{
+    grid-column: 1/13;
+   }
+   canvas{
+    min-height: 700svh;
+   }
+  }
