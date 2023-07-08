@@ -4,9 +4,12 @@ import { defineConfig } from 'vite';
      build: {
        rollupOptions: {
          input: {
-           main: '/main2.js',
+           main2: '/main2.js',
            about: '/about.html',
            contact: 'style2.css',
+           main: '/index.html',
+           style: '/style.css',
+           script: '/main.js',
          },
        },
      },
