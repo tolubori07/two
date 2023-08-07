@@ -1,5 +1,4 @@
 :root{
-  --animate : example 10s  cubic-bezier(0.755, 0.05, 0.855, 0.06) infinite;
   --fontdigital: ds-digital;
 }
 @font-face {
@@ -56,9 +55,14 @@ section{
     font-size: 1.25rem;
     padding: 1rem;
     animation: var(--animate);
+    border-radius: 50px 50px 50px 50px;
 }
 @media screen and (max-width: 900px) {
-  
+  main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+  }
+
     canvas{
       min-height: 100svh;
      }
@@ -108,8 +112,8 @@ section{
  animation: var(--animate);
 }
 
-.light{
-    grid-column: 4/10;
+.projects{
+    grid-column: 1/13;
 }
 .left{
     grid-column: 5/12;
@@ -225,15 +229,21 @@ section{
   }
   a{
     color: #489ed0;
-    text-decoration: underline;
+    text-decoration: none;
   }
   a:hover{
-     
       text-decoration: underline;
-      border: #489ed0 solid 5px;
-      border-radius: 50px;
-      padding: 5px;
-      font-size: 1em;
+      text-decoration-color: #1babab;
+      text-decoration-thickness: 0.2em;
     }
-
-    /*page 2*/
+.navbar-brand {
+  font-size: larger;
+}
+nav{
+  background-color: #403d3d;
+  height: 2em;
+  color: white;
+}
+.collapse{
+  background-color: #403d3d;
+}

@@ -94,6 +94,7 @@ section{
     grid-column: 1/13;
    }
    canvas{
-    min-height: 700svh;
+    max-height: 900svh;
+    max-width: 800svw;
    }
   }
