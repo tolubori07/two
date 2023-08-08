@@ -1,18 +1,8 @@
-:root{
-  --fontdigital: ds-digital;
-}
-@font-face {
-  font-family: ds-digital;
-  src: url(public/DS-DIGIT.TTF);
-}
 @font-face {
   font-family: vcr osd mono;
   src: url(public/VCR_OSD_MONO.ttf);
 }
-@font-face {
-  font-family: aquire;
-  src: url(public/Aquire-BW0ox.otf);
-}
+
 canvas{
     position: fixed;
     width: 100%;
@@ -25,6 +15,7 @@ main{
     grid-template-columns: repeat(12,1fr);
     padding: 100px 0px;
     z-index: 99;
+    margin-bottom: 7rem;
 }
 
 body{
@@ -58,16 +49,17 @@ section{
     border-radius: 50px 50px 50px 50px;
 }
 @media screen and (max-width: 900px) {
-  main{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-  }
-
+main{
+  display: block;
+}
     canvas{
       min-height: 100svh;
      }
      .left,.stuff,.manifest,.light,.proficiency,.task,.libraries{
-      grid-column: 1/12;
+      width: 100%;
+     }
+     section{
+      background-color: black;
      }
 }
 
@@ -95,7 +87,7 @@ section{
    right: 0%;
    bottom: 0px;
    animation: glow 1s ease-in-out infinite alternate;
-   font-family: aquire;
+   font-family: vcr osd mono;
 }
 .blp{
     grid-column: 6/ 12;
@@ -109,7 +101,6 @@ section{
 }
 .libraries{
   grid-column: 4/10;
- animation: var(--animate);
 }
 
 .projects{
@@ -128,7 +119,7 @@ section{
 .glow{
     color: white;
     text-align: center;
-    font-family: aquire;
+    font-family: vcr osd mono;
 }
 @keyframes glow {
     from {
@@ -139,40 +130,9 @@ section{
       text-shadow: 0 0 20px #fff, 0 0 30px greenyellow, 0 0 40px greenyellow, 0 0 50px greenyellow, 0 0 60px greenyellow, 0 0 70px greenyellow, 0 0 80px greenyellow;
     }
   }
-  .proficiency{
-    grid-column: 2/8;
-    animation: var(--animate);
-  }
-  .jsbar{
-    height: 4%;
-    width: 70%;
-    border-radius: 10em;
-    border-color:white;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  background-color: #403d3d;
-  accent-color: red;
-  }
+
+ 
   
-  .cssbar{
-    height: 10%;
-    width: 70%;
-    border-radius: 10em;
-    border-color:white;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-color: #403d3d;
-    
-  }
-  .htmlbar{
-    height: 4%;
-    width: 70%;
-    border-radius: 10em;
-    border-color:white ;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-color: #403d3d;
-  }
   
   .jquery{
     height: 3em;
@@ -188,7 +148,7 @@ section{
   }
   .js{
     height: 3em;
-    width: 5em;
+    width: 3em;
   }
   .boot{
     height: 1.7em;
@@ -210,12 +170,7 @@ section{
     grid-column: 5/11;
     animation: var(--animate);
   }
-  ::-webkit-progress-bar {
-    height: 10%;
-    width: 70%;
-    border-radius: 10em;
-    border-color:black ;
-  }
+  
   a{
     color: #489ed0;
     text-decoration: none;
@@ -238,4 +193,12 @@ nav{
 }
 .nav-item{
   font-size: 0.7em;
+}
+.listimg{
+  height: 3em;
+  width: 3em;
+}
+.listimg:hover{
+  transform:  rotate3d(20,23,22,41deg);
+
 }
