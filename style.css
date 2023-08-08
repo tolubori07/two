@@ -173,33 +173,22 @@ section{
     margin-bottom: 1%;
     background-color: #403d3d;
   }
-  .htmlnum{
-    font-family: var(--fontdigital);
-    color: #FF3403;
-    background-color: #403d3d;
-    border: 4mm ridge silver;
-    accent-color: red;
-  }
-  .cssnum{
-    font-family: var(--fontdigital);
-    color: #FF3403;
-    background-color: #403d3d;
-    border: 4mm ridge silver;
-    accent-color: red;
-  }
-  .jsnum{
-    font-family: var(--fontdigital);
-    color: #FF3403;
-    background-color: #403d3d;
-    border: 4mm ridge silver;
-    accent-color: red;
-  }
+  
   .jquery{
     height: 3em;
     width: 3em;
   }
-  .jquerylist,.bootlist,.threelistl,.animelist{
-    font-size: 1em;
+  .Html{
+    height: 3em;
+    width: 3em;
+  }
+  .css{
+    height: 3em;
+    width: 3em;
+  }
+  .js{
+    height: 3em;
+    width: 5em;
   }
   .boot{
     height: 1.7em;
@@ -246,4 +235,7 @@ nav{
 }
 .collapse{
   background-color: #403d3d;
+}
+.nav-item{
+  font-size: 0.7em;
 }
