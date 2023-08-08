@@ -54,6 +54,7 @@ main{
 }
     canvas{
       min-height: 100svh;
+      min-width: 100svh;
      }
      .left,.stuff,.manifest,.light,.proficiency,.task,.libraries{
       width: 100%;
