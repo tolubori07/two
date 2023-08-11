@@ -55,7 +55,7 @@ main{
   min-width: 100svw;
 }
     canvas{
-      min-height: 100svh;
+      min-height: 100vh;
       min-width: 100svw;
       z-index: -99;
       position: fixed;
