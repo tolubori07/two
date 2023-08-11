@@ -46,7 +46,7 @@ scene.add(pointlight,ambientlight)
 const gridHelper = new THREE.GridHelper( 200, 50 );
 scene.add(lighthelper,gridHelper)*/
 
-const controls = new OrbitControls(camera,renderer.domElement)
+//const controls = new OrbitControls(camera,renderer.domElement)
 
 //add star
 function addstar(){
@@ -116,7 +116,7 @@ moon.position.set(
 );
 
 
-    controls.update();
+    
 	
 	renderer.render(scene,camera)
 }

@@ -57,6 +57,8 @@ main{
     canvas{
       min-height: 100%;
       min-width: 100%;
+      z-index: -99;
+      position: fixed;
      }
      .left,.stuff,.manifest,.light,.proficiency,.task,.libraries{
       min-width: 100%;
