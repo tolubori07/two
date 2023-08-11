@@ -59,10 +59,11 @@ main{
       min-width: 100%;
      }
      .left,.stuff,.manifest,.light,.proficiency,.task,.libraries{
-      width: 100%;
+      min-width: 100%;
      }
      section{
       background-color: black;
+      min-width: 100%;
      }
 }
 
@@ -204,4 +205,13 @@ nav{
 .listimg:hover{
   transform:  rotate3d(20,23,22,41deg);
 
+}
+#contact{
+  grid-column: 1/13;
+  text-align: center;
+  height: 30rem;
+}
+.messagebody{
+  height: 20rem;
+  width: 40rem;
 }
