@@ -52,7 +52,7 @@ section{
 main{
   display: block;
   min-height: 100svh;
-  min-width: 100svw;
+  width: 100%;
 }
     canvas{
       min-height: 100%;
@@ -66,6 +66,9 @@ main{
      section{
       background-color: black;
       min-width: 100%;
+     }
+     .tech{
+      margin-left: 0px;
      }
 }
 
@@ -110,18 +113,93 @@ main{
 }
 
 .projects{
-    grid-column: 1/13;
+    grid-column: 1/13; 
 }
+
+
+.projects>.web--screenshot{
+width: 40%;
+aspect-ratio: 2/1;
+}
+.layout{
+  display: flex;
+}
+.body{
+  flex-wrap: wrap;
+}
+.tech{
+  height: 1em;
+  width: 1em;
+  visibility: hidden; 
+  z-index: -99;
+  position:absolute;
+  transition: all 1s;
+}
+.postgres0{
+  width: 2em;
+  height: 1em;
+}
+
+.code0{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ), url('public/code0home.png');
+  background-repeat: no-repeat;
+  width: 30%;
+  aspect-ratio: 2/1;
+  background-size: contain;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5em;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2rem;
+  grid-area: sidebar;
+}
+.body{
+  grid-area: body;
+  width: 50%;
+}
+.code0:hover>.body{
+ display: inherit;
+  transition: all 0.3s ease-in;
+}
+.code0:hover{
+  scale: 1.2;
+  background-image: url('public/code0home.png');
+  transition: all 0.2s cubic-bezier(1, 0, 10, 1);
+}
+ .code0:hover>.tech{
+  visibility: visible;
+  transition: all 0.2s ease-in;
+}
+.code0:hover>.boot0{
+  transform: translateX(-600%) translateY( -350%) rotateY(-5deg) rotateZ(-25deg);
+  scale: 1.5;
+  transition: all 0.2s;
+}
+.code0:hover>.postgres0{
+  transform:  translateY( 350%) translateX(300%) rotateY(-5deg) rotateZ(25deg);
+  scale: 1.5;
+  transition: all 0.2s;
+}
+.code0:hover>.dj0{
+  transform:  translateY( 350%) translateX(-600%) rotateY(5deg) rotateZ(-25deg);
+  scale: 1.5;
+  transition: all 0.2s;
+}
+.code0:hover>.py0{
+  transform: translateX(600%) translateY(-350%)  rotateY(5deg) rotateZ(25deg);
+  scale: 1.5;
+  transition: all 0.2s;
+ } 
+
 .left{
     grid-column: 5/12;
 }
-@keyframes example {
-    0%   {box-shadow: 9px 9px 5px cyan ;}
-    25% {box-shadow: 9px 9px 5px #38FF12;}
-    50%  {box-shadow: 9px 9px 5px #FF3403;}
-    75%  {box-shadow: 9px 9px 5px #CB0FFF;}
-    100% {box-shadow: 9px 9px 5px #39FF14;}
-  }
 .glow{
     color: white;
     text-align: center;
@@ -137,9 +215,6 @@ main{
     }
   }
 
- 
-  
-  
   .jquery{
     height: 3em;
     width: 3em;
@@ -181,10 +256,11 @@ main{
     color: #489ed0;
     text-decoration: none;
   }
-  a:hover{
+  .nav-item>a:hover{
       text-decoration: underline;
       text-decoration-color: #1babab;
       text-decoration-thickness: 0.2em;
+      transition: all;
     }
 .navbar-brand {
   font-size: larger;

@@ -81,19 +81,27 @@ const earth = new THREE.Mesh(
 );
 scene.add(earth);
 
-earth.position.z = 0;
+earth.position.z = -15;
 earth.position.setX(0);
 
 //scroll animation
 function movecamera() {
   const t = document.body.getBoundingClientRect().top;
-moon.rotation.x += 0.05
-moon.rotation.y +=0.001
-moon.rotation.z +=0.001
+  // moon.rotation.x += 0.01;
+  // moon.rotation.y += 0.075;
+  // moon.rotation.z += 0.05;
 
-camera.position.y = t * -0.002
-camera.position.x = t * -0.03
-camera.rotation.y = t * -0.0002;
+  earth.rotation.x += 0.01;
+  earth.rotation.y += 0.075;
+  earth.rotation.z += 0.05;
+
+  // jeff.rotation.y += 0.01;
+  // jeff.rotation.z += 0.01;
+
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.002;
+  camera.position.y = t * -0.0003
+  camera.rotation.y = t * -0.00005;
 }
 document.body.onscroll = movecamera;
 
@@ -104,8 +112,8 @@ function animate() {
   requestAnimationFrame(animate);
 
   moon.rotation.x += 0.01;
-  moon.rotation.y += 0.003;
-  moon.rotation.z += 0.01;
+  moon.rotation.y += 0.03;
+  //moon.rotation.z += 0.01;
 
   earth.rotation.y += 0.01;
   earth.rotation.y += 0.003;
@@ -120,3 +128,6 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+
+
+const code0 = document.querySelector
