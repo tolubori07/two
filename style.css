@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: vcr osd mono;
   src: url(public/VCR_OSD_MONO.ttf);
@@ -197,6 +200,64 @@ aspect-ratio: 2/1;
   transition: all 0.2s;
  } 
 
+/*----------------------------------------------------------------*/
+.weatherio{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ), url('public/weatherio.png');
+  background-repeat: no-repeat;
+  width: 30%;
+  aspect-ratio: 2/1;
+  background-size: contain;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5em;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2rem;
+  grid-area: sidebar;
+}
+
+ .weatherio:hover>.body{
+  display: inherit;
+   transition: all 0.3s ease-in;
+ }
+ .weatherio:hover{
+   scale: 1.2;
+   background-image: url('public/weatherio.png');
+   transition: all 0.2s cubic-bezier(1, 0, 10, 1);
+ }
+  .weatherio:hover>.tech{
+   visibility: visible;
+   transition: all 5s ease-in;
+ }
+ .weatherio:hover>.boot0{
+   transform: translateX(-600%) translateY( -350%) rotateY(-5deg) rotateZ(-25deg);
+   scale: 1.5;
+   transition: all 0.2s;
+ }
+ .weatherio:hover>.postgres0{
+   transform:  translateY( 350%) translateX(300%) rotateY(-5deg) rotateZ(25deg);
+   scale: 1.5;
+   transition: all 0.2s;
+ }
+ .weatherio:hover>.tailwind{
+   transform:  translateY( 350%) translateX(-600%) rotateY(5deg) rotateZ(-25deg);
+   scale: 1.5;
+   transition: all 0.2s;
+ }
+ .weatherio:hover>.react{
+   transform: translateX(600%) translateY(-350%)  rotateY(5deg) rotateZ(25deg);
+   scale: 1.5;
+   transition: all 0.2s;
+  } 
+
+/*----------------------------------------------------------------*/
+
+
 .left{
     grid-column: 5/12;
 }
@@ -204,6 +265,7 @@ aspect-ratio: 2/1;
     color: white;
     text-align: center;
     font-family: vcr osd mono;
+    grid-column: 1/10;
 }
 @keyframes glow {
     from {
@@ -270,9 +332,7 @@ nav{
   height: 2em;
   color: white;
 }
-.collapse{
-  background-color: #403d3d;
-}
+
 .nav-item{
   font-size: 0.7em;
 }
@@ -285,11 +345,32 @@ nav{
 
 }
 #contact{
-  grid-column: 1/13;
-  text-align: center;
-  height: 30rem;
+  grid-column: 1/13; 
 }
 .messagebody{
   height: 20rem;
   width: 40rem;
 }
+
+.me{
+  width:15rem;
+  height: 15rem;
+  float: right;
+  border-radius: 50% 50% 50% 50%;
+  border-color: aquamarine;
+  border-style: solid;
+  transition: all 0.5s;
+   box-shadow: 5px 5px 5px 5px #4b738da7;
+  -webkit-box-shadow: 2px 2px 2px 2px #9dd7d2;
+}
+.me:hover{-webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+  transition: all 0.5s;
+  }
+
+
+  .navbar-brand{
+    text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 13px 13px 0 #182B64, 14px 14px 0 #0F225B, 15px 15px 0 #071A53, 16px 16px 0 #02114A, 17px 17px 0 #0B0841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
+  }
+
+  
