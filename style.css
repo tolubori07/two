@@ -32,7 +32,7 @@ h1,h2,h3{
 }
 
 header{
-    background-color:#403d3d;
+    /* background-color:#403d3d; */
     color: white;
     grid-column: 1/8;
     padding: 2rem;
@@ -265,8 +265,14 @@ aspect-ratio: 2/1;
     color: white;
     text-align: center;
     font-family: vcr osd mono;
-    grid-column: 1/10;
+    grid-column: 1/9;
+    position: relative;
+    top: 0;
 }
+.glow p{
+  font-size: 2.5rem;
+}
+
 @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
@@ -321,14 +327,13 @@ aspect-ratio: 2/1;
   .nav-item>a:hover{
       text-decoration: underline;
       text-decoration-color: #1babab;
-      text-decoration-thickness: 0.2em;
-      transition: all;
+      text-decoration-thickness: 0.1em;
+      transition: all 0.1s;
     }
 .navbar-brand {
   font-size: larger;
 }
 nav{
-  background-color: #403d3d;
   height: 2em;
   color: white;
 }
