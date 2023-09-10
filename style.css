@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 @font-face {
   font-family: vcr osd mono;
   src: url(public/VCR_OSD_MONO.ttf);
@@ -25,6 +23,8 @@ body{
     font-family: vcr osd mono;
     word-spacing: 0.1em;
     word-wrap: break-word;
+    scroll-behavior: smooth;
+  scroll-padding-top: 100rem;
 }
 
 h1,h2,h3{
