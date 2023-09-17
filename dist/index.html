@@ -18,18 +18,17 @@
       crossorigin="anonymous"
     ></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
     <script type="module" crossorigin src="/assets/three.module-fb96ec7d.js"></script>
-    <script type="module" crossorigin src="/assets/script-0ccf7f5a.js"></script>
-    <link rel="stylesheet" href="/assets/style-fc98c0c4.css">
+    <script type="module" crossorigin src="/assets/script-f60c9e69.js"></script>
+    <link rel="stylesheet" href="/assets/style-cd1f34f5.css">
   </head>
   <body>
     <canvas id="bg"></canvas>
-    <main>
+    <main style="font-size: medium;">
       <header>
-        <nav class="navbar navbar-expand-sm navbar-dark py-1 fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark py-1 fixed-top" style="background-color: #ffffff41; backdrop-filter: blur(5px);">
           <div class="container">
             <h1 class="navbar-brand">JA</h1>
             <button
@@ -43,32 +42,36 @@
             <div class="collapse navbar-collapse" id="navmenu">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a href="#About" class="nav-link display-3">About-Me</a>
+                  <a href="#About" class="nav-link display-3 n1">About-Me</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#Projects" class="nav-link display-3">Projects</a>
+                  <a href="#Projects" class="nav-link display-3 n2">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#Workhistory" class="nav-link display-3"
+                  <a href="#Workhistory" class="nav-link display-3 n3"
                     >Work-history</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a href="#Tech" class="nav-link display-3">Technologies</a>
+                <li class="nav-item ">
+                  <a href="#Tech" class="nav-link display-3 n4">Technologies</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link display-3">Contact</a>
+                <li class="nav-item ">
+                  <a href="#contact" class="nav-link display-3 n5">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-        <div class="glow">
+      </header>
+
+      <section class="glow" style="margin-bottom: 2%;">
+      <div class="glow">
+        <img class="me" src="./me.jpg" alt="Picture of me">
         <h1 class="glow">Jaabir Adeniji-Bello</h1>
         <p>🚀 Welcome to my website!</p>
-        <img class="me" src="./me.jpg" alt="Picture of me">
+       
       </div>
-      </header>
+    </section>
 
       <blockquote class="stuff">
         <p>👨🏿‍💻I like making stuff and putting it on the internet</p>
@@ -77,19 +80,11 @@
       <section
         id="About"
         class="manifest"
-        data-aos="zoom-in-up"
-        data-aos-easing="ease-in"
-        data-aos-duration="500"
+      
       >
         <h2>About</h2>
         <p>
-          I am a full-stack developer and a Full time student that just
-          completed my GCSE's. I am currently focused on improving myself by
-          constantly learning and applying new knowledge and obtaining a wide
-          variety of experiences. My coding journey began in 2020 and since then
-          I've picked it up as a hobby playing around with multiple programming
-          languages such as HTML,CSS,Javascript,PHP,kotlin,python and hope to
-          pursue Web development as a career.
+          I am a full-stack web-developer and a high school leaver who is currently focused on improving my web development skills by learning consistently and applying new knowledge. I hope to obtain a wide variety of experiences by getting into the web development industry to contribute to organisations and gain industrial experience. I have a strong background in django and python which allows the development of production ready web applications that cater to customer’s needs. I also have a strong background in using tools such as bootstrap and tailwind to develop my applications’ frontend quickly.
         </p>
       </section>
 
@@ -104,20 +99,18 @@
 
       <section
         class="projects"
-        data-aos="zoom-in-up"
-        data-aos-easing="ease-in"
-        data-aos-duration="500"
+      
         id="Projects"
       
       >
         <h2>👩🏽‍🚀 Projects</h2>
 <div class="layout">
         <div class="code0">
-          <h2>Code-0</h2>
-          <img src="/assets/bootstrap-e0da4eab.png" alt="" class="tech boot0" />
-          <img src="/assets/dj-logo-c65ee16c.png" alt="" class="tech dj0" />
-          <img src="/assets/python-699b0b31.png" alt="" class="tech py0" />
-          <img src="/assets/postgres-9387247a.png" alt="" class="tech postgres0" />
+          <h2 class="sc-label">Code-0</h2>
+          <img src="./bootstrap.png" alt="" class="tech boot0" />
+          <img src="./dj-logo.png" alt="" class="tech dj0" />
+          <img src="./python.png" alt="" class="tech py0" />
+          <img src="./postgres.png" alt="" class="tech postgres0" />
         </div>
         <div class="body mx-5">
           <small>Django,Python,Postgresql,Bootstrap</small>
@@ -128,9 +121,9 @@
       </div>
       <div class="layout">
         <div class="weatherio">
-          <h2>Weatherio</h2>
-          <img src="/assets/react-0d71d2ba.png" alt="" class="tech react" />
-          <img src="/assets/tailwind-b45208c2.png" alt="" class="tech tailwind" />
+          <h2 class="sc-label">Weatherio</h2>
+          <img src="./react.png" alt="" class="tech react" />
+          <img src="./tailwind.png" alt="" class="tech tailwind" />
         </div>
         <div class="body mx-5">
           <small>React js, Tailwind CSS, Openweather API</small>
@@ -140,33 +133,31 @@
       </div>
 
       <div class="layout">
-        <div class="code0">
-          <h2>Code-0</h2>
-          <img src="/assets/bootstrap-e0da4eab.png" alt="" class="tech boot0" />
-          <img src="/assets/dj-logo-c65ee16c.png" alt="" class="tech dj0" />
-          <img src="/assets/python-699b0b31.png" alt="" class="tech py0" />
-          <img src="/assets/postgres-9387247a.png" alt="" class="tech postgres0" />
+        <div class="zaggi">
+          <h2 class="sc-label">Zaggi online market place</h2>
+          <img src="./bootstrap.png" alt="" class="tech boot0" />
+          <img src="./dj-logo.png" alt="" class="tech dj0" />
+          <img src="./python.png" alt="" class="tech py0" />
+          <img src="./postgres.png" alt="" class="tech postgres0" />
         </div>
         <div class="body mx-5">
           <small>Django,Python,Postgresql,Bootstrap</small>
-          <p>A forum like app where users can register, 
-            <br>
-            create rooms and send messages on their favourite topics</p>
-          <a href="https://code0.onrender.com" >visit Site <i class="bi bi-arrow-right"></i></a>
+          <p>A mockup online market place for Zaggi- A Nigeria based fashion brand.</p>
+          <a href="https://Zaggi.up.railway.app" >visit Site <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="layout">
-        <div class="code0">
-          <h2>Code-0</h2>
-          <img src="/assets/bootstrap-e0da4eab.png" alt="" class="tech boot0" />
-          <img src="/assets/dj-logo-c65ee16c.png" alt="" class="tech dj0" />
-          <img src="/assets/python-699b0b31.png" alt="" class="tech py0" />
-          <img src="/assets/postgres-9387247a.png" alt="" class="tech postgres0" />
+        <div class="phonebook">
+          <h2 class="sc-label">Code-0</h2>
+          <img src="./bootstrap.png" alt="" class="tech boot0" />
+          <img src="./dj-logo.png" alt="" class="tech dj0" />
+          <img src="./python.png" alt="" class="tech py0" />
+          <img src="./postgres.png" alt="" class="tech postgres0" />
         </div>
         <div class="body mx-5">
           <small>Django,Python,Postgresql,Bootstrap</small>
-          <p>A forum like app where users can register, create rooms and send messages on their favourite topics</p>
+          <p>A contact storage app to store user conntacts, emergency contacts and their favourite contacts.</p>
           <a href="https://code0.onrender.com" >visit Site <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
@@ -175,47 +166,50 @@
       <section
         class="libraries"
         id="Tech"
-        data-aos="fade-left"
-        data-aos-easing="ease-in"
-        data-aos-duration="500"
       >
         <div>
           <h1>Languages, Frameworks and Technologies I use in my Projects</h1>
           <ul>
             <li class="html">
-              <img class="listimg p-2" src="html-logo.png" alt="" /> HTML
+              <img class="listimg p-2" src="./html-logo.png" alt="" /> HTML
             </li>
             <li class="html">
-              <img class="listimg p-2" src="css3.png" alt="" /> CSS
+              <img class="listimg p-2" src="./css3.png" alt="" /> CSS
             </li>
             <li class="html">
-              <img class="listimg" src="js-icon.png" alt="" /> Javascript
+              <img class="listimg" src="./js-icon.png" alt="" /> Javascript
             </li>
             <li class="html">
-              <img class="listimg p-2" src="php.png" alt="" /> PHP
+              <img class="listimg p-2" src="./php.png" alt="" /> PHP
             </li>
             <li class="html">
-              <img class="listimg p-2" src="python.png" alt="" /> Python
+              <img class="listimg p-2" src="./python.png" alt="" /> Python
             </li>
             <li class="html">
-              <img class="listimg p-2" src="kotlin.png" alt="" /> Kotlin
+              <img class="listimg p-2" src="./kotlin.png" alt="" /> Kotlin
             </li>
             <li class="html">
-              <img class="listimg p-2" src="dj-logo.png" alt="" />Django
+              <img class="listimg p-2" src="./dj-logo.png" alt="" />Django
             </li>
             <li class="jquerylist">
-              <img class="listimg p-2" src="jquery.png" alt="" />Jquery
+              <img class="listimg p-2" src="./jquery.png" alt="" />Jquery
             </li>
             <li class="bootlist">
-              <img class="listimg" src="bootstrap.png" alt="" /> Bootstrap
+              <img class="listimg" src="./bootstrap.png" alt="" /> Bootstrap
             </li>
             <br />
             <li class="threelist">
-              <img class="listimg" src="three.png" alt="" />Three Js
+              <img class="listimg" src="./three.png" alt="" />Three Js
             </li>
             <br />
             <li class="animelist">
-              <img class="listimg" src="anime-mini-logo.svg" alt="" /> Anime Js
+              <img class="listimg" src="./anime-mini-logo.svg" alt="" /> Anime Js
+            </li>
+            <li class="animelist">
+              <img class="listimg" src="./tailwind.png" alt="" /> Tailwind CSS
+            </li>
+            <li class="animelist">
+              <img class="listimg" src="./react.png" alt="" /> React JS
             </li>
           </ul>
         </div>
@@ -223,9 +217,7 @@
 
       <section
         class="left"
-        data-aos="fade-right"
-        data-aos-easing="ease-in"
-        data-aos-duration="500"
+       
         id="Workhistory"
         id="Work-history"
       >
@@ -258,24 +250,19 @@
 <div >
   <h1>Reach Out To Me</h1>
 
-   <a href="mailto:tolubori07@gmail.com" ><h3><i class="bi bi-envelope-at text-3xl"> Gmail</i></h3></a>
+   <a href="mailto:Jabello0307@gmail.com" ><h3><i class="bi bi-envelope-at text-3xl"> Gmail: Jabello0307@gmail.com</i></h3></a>
    <a href="https://github.com/tolubori07"><h3><i class="bi bi-github">Github</i></h3></a>
    <a href="https://Instagram.com/jaabir_bello"><h3><i class="bi bi-instagram">Instagram</i></h3></a>
    <a href="https://linkedin.com/in/jaabir-adeniji-bello"><h3><i class="bi bi-linkedin">linkedin</i></h3></a>
+   <a href="./Revised Jaabir's CV.pdf"><h3><Download class="bi bi-file-earmark-arrow-down-fill">Download cv</h3></i></a>
   </form>
 </div>
 </section> 
 
-      <blockquote class="thanks">
+      <footer class="thanks">
         <h1>Prod By Jaabir &copy;</h1>
-      </blockquote>
+      </footer>
     </main>
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
-<!--To run do
-npm run dev-->
