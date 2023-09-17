@@ -1,10 +1,10 @@
 @font-face {
   font-family: vcr osd mono;
-  src: url(./VCR_OSD_MONO.ttf);
+  src: url(public/VCR_OSD_MONO.ttf);
 }
 @font-face {
   font-family: bit;
-  src: url(./04B_30__.TTF);
+  src: url(public/04B_30__.TTF);
 }
 
 canvas {
@@ -180,7 +180,7 @@ section {
 
 .code0 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./code0home.png");
+    url("public/code0home.png");
   background-repeat: no-repeat;
   width: 30%;
   aspect-ratio: 2/1;
@@ -205,7 +205,7 @@ section {
 }
 .code0:hover {
   scale: 1.2;
-  background-image: url("./code0home.png");
+  background-image: url("public/code0home.png");
   transition: all 0.2s cubic-bezier(1, 0, 10, 1);
 }
 .code0:hover > .tech {
@@ -236,7 +236,7 @@ section {
 /*----------------------------------------------------------------*/
 .weatherio {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./weatherio.png");
+    url("public/weatherio.png");
   background-repeat: no-repeat;
   width: 30%;
   aspect-ratio: 2/1;
@@ -258,7 +258,7 @@ section {
 }
 .weatherio:hover {
   scale: 1.2;
-  background-image: url("./weatherio.png");
+  background-image: url("public/weatherio.png");
   transition: all 0.2s cubic-bezier(1, 0, 10, 1);
 }
 .weatherio:hover > .tech {
@@ -289,7 +289,7 @@ section {
 /*----------------------------------------------------------------*/
 .zaggi {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./zaggisc.png");
+    url("public/zaggisc.png");
   background-repeat: no-repeat;
   width: 30%;
   aspect-ratio: 2/1;
@@ -310,7 +310,7 @@ section {
 }
 .zaggi:hover {
   scale: 1.2;
-  background-image: url("./zaggisc.png");
+  background-image: url("public/zaggisc.png");
   transition: all 0.2s cubic-bezier(1, 0, 10, 1);
   color: black;
 }
@@ -342,7 +342,7 @@ section {
 /*----------------------------------------------------------------*/
 .phonebook {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./phonebook.png");
+    url("public/phonebook.png");
   background-repeat: no-repeat;
   width: 30%;
   aspect-ratio: 2/1;
@@ -363,7 +363,7 @@ section {
 }
 .phonebook:hover {
   scale: 1.2;
-  background-image: url("./phonebook.png");
+  background-image: url("public/phonebook.png");
   transition: all 0.2s cubic-bezier(1, 0, 10, 1);
 }
 .phonebook:hover > .tech {
