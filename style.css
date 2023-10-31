@@ -525,3 +525,14 @@ nav {
 
 @media screen and (max-width: 800px) {
 }
+
+.driven{
+  grid-column: 1/13;
+  margin-bottom: 10rem;
+  text-align: center;
+  font-weight: bolder;
+  font-family: bit;
+}
+.driven span{
+  color: aquamarine;
+}
