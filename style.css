@@ -141,6 +141,8 @@ section {
   grid-column: 6/ 12;
   background-color: white;
   color: black;
+  border-radius:20px;
+  border-left:solid blue 30px;
 }
 
 .manifest {

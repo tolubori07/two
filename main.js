@@ -157,3 +157,50 @@ const typeEffect = () => {
     }
 }
 typeEffect();
+
+
+const getQuotes=()=>{
+const quotes=[
+    {
+   quote: "Love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is done well.",
+ author:     "Vincent Van Gogh"
+    },
+   {
+  quote: "For all sad words of tongue and pen, The saddest are these, 'It might have been'.",
+author:      "John Greenleaf Whittier"
+    },
+      {
+      quote: "Kindness is a mark of faith and whoever is not kind has no faith",
+      author:"Prophet Muhammad(PBUH)"
+    },
+    {
+      quote:"Great things are not done by impulse, but by a series of small things brought together",
+      author:"Vincent Van Gogh"
+    },
+      {
+      quote:"Creativity is seeing what others see and thinking what no one else ever thought.",
+      author:"Albert Einstein"
+    },
+    {
+      quote:"Simplicity, carried to the extreme, becomes elegance.",
+      author:"Jon Franklin"
+      },
+    {
+      quote:"Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.",
+     author: "Albert Einstein, physicist"
+    },
+    {
+      quote:"Most of the good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.", 
+      author:"Linus Torvalds"
+    },
+    {
+      quote: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+       author:"Martin Fowler"
+    }
+    ]
+  const randIndex = Math.floor(Math.random()*quotes.length-1)
+  const randQuote = quotes[randIndex]
+  const quoteContainer = document.querySelector('.quote').append(randQuote.quote)
+  const authorContainer = document.querySelector('.author').append(randQuote.author)
+}
+window.onload=(e)=>getQuotes()
